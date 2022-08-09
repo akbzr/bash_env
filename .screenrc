@@ -1,0 +1,13 @@
+shell -$SHELL
+defutf8 on
+shelltitle 'l3'
+hardstatus alwayslastline
+altscreen on
+screen 0
+hardstatus alwayslastline
+hardstatus string '%{Yk}%-w%{.Yk}%n %t%{-}%+w %=%{.w} %{kY}%C'
+shell -$SHELL
+deflogin on
+backtick 1 5 5 uptime
+bind f eval "caption splitonly" "hardstatus ignore"
+bind F eval "caption always" "hardstatus alwayslastline"
